@@ -17,8 +17,8 @@ int main(void) {
   salarioBruto = valorHoraReais * totalHoras;
   salarioLiquido = salarioBruto * (1 - IR) * (1 - INSS);
 
-  printf("O salário bruto é de aprox R$%.2f\n", salarioBruto);
-  printf("O salário liquido é de aprox R$%.2f\n", salarioLiquido);
+  printf("O salário bruto é de aprox R$ %.2f\n", salarioBruto);
+  printf("O salário liquido é de aprox R$ %.2f\n", salarioLiquido);
 
   return 0;
 }

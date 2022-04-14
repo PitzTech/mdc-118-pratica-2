@@ -5,15 +5,14 @@
 int num1, num2, soma, quociente, resto;
 
 int main(void) {
-  printf("Digite 2 números separados por espaços: ");
+  printf("Digite o dividendo e o divisor separados por espaços: ");
   
   scanf("%d %d", &num1, &num2);
 
   quociente = num1 / num2;
   resto = num1 % num2;
 
-  printf("A quociente entre n1 e n2 é %d\n", quociente);
-  printf("O resto entre n1 e n2 é %d\n", resto);
+  printf("Divisão entre %d e %d tem quociente %d e resto %d\n", num1, num2, quociente, resto);
 
   return 0;
 }

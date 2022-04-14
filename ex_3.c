@@ -10,7 +10,7 @@ int main(void) {
 
   fahrenheitTemperature = celciusTemperature * 9/5 + 32;
 
-  printf("A temperatura em fahrenheit é aprox %.2f\n", fahrenheitTemperature);
+  printf("%.2fºC = %.2fºF\n", celciusTemperature, fahrenheitTemperature);
 
   return 0;
 }

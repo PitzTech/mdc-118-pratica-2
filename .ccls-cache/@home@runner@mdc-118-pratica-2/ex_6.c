@@ -14,7 +14,7 @@ int main(void) {
 
   valorFinalReais = (anoDepreciacao - anoFabricacao) * 0.01 * valorCompraReais;
 
-  printf("O valor depreciado do carro é de aprox R$%.2f\n", valorFinalReais);
+  printf("O valor depreciado do carro é de aprox R$ %.2f\n", valorFinalReais);
 
   return 0;
 }
