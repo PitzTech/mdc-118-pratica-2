@@ -13,7 +13,7 @@ int main(void) {
 
   media = (numbers[0] + numbers[1] + numbers[2]) / 3;
 
-  printf("A media aritmetica é %.2f\n", media);
+  printf("A media aritmetica é aprox %.2f\n", media);
 
   return 0;
 }
