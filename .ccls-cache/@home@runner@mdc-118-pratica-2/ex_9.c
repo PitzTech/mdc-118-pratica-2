@@ -2,17 +2,19 @@
 
 // Faça um programa em C que leia um número inteiro e imprima o caractere correspondente na tabela ASCII.
 
-float largura, comprimento, areaHectares;
+unsigned int asciInteger;
 
 int main(void) {
-  printf("Digite a largura e comprimento do terreno, separados por espaço, em metros: ");
-  scanf("%f %f", &largura, &comprimento);
+  printf("Digite um inteiro: ");
 
-  areaHectares = comprimento * largura / 1e4;
+  // caracteres começam em 32
+  while(!scanf("%d", &asciInteger) || asciInteger > 255 || asciInteger < 32){
+     printf("O valor máximo é 255 e minimo 32, tente novamente: "); 
+  }
 
-  printf("A área do terreno em hectares é aprox %.2f\n", areaHectares);
+  printf("O caractere correspondente na tabela ACII é o: '%c'\n", asciInteger);
 
   return 0;
 }
 
-//gcc ex_4.c -o resu -Wno-unused-result && ./resu
+//gcc ex_9.c -o resu -Wno-unused-result && ./resu

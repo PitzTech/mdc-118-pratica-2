@@ -2,15 +2,23 @@
 
 // Faça um programa em C que leia o valor da hora de trabalho e o total de horas trabalhadas no mês e calcule o salário bruto, o salário líquido, e os impostos descontados. Considere IR igual a 25% e INSS igual a 11%.
 
-float largura, comprimento, areaHectares;
+#define IR 0.25
+#define INSS 0.11
+
+float valorHoraReais, salarioBruto, salarioLiquido;
+int totalHoras;
 
 int main(void) {
-  printf("Digite a largura e comprimento do terreno, separados por espaço, em metros: ");
-  scanf("%f %f", &largura, &comprimento);
+  printf("Digite o valor da hora de trabalho em reais: ");
+  scanf("%f", &valorHoraReais);
+   printf("Digite o número de horas trabalhadas: ");
+  scanf("%d", &totalHoras);
 
-  areaHectares = comprimento * largura / 1e4;
+  salarioBruto = valorHoraReais * totalHoras;
+  salarioLiquido = salarioBruto * (1 - IR) * (1 - INSS);
 
-  printf("A área do terreno em hectares é aprox %.2f\n", areaHectares);
+  printf("O salário bruto é de aprox R$ %.2f\n", salarioBruto);
+  printf("O salário liquido é de aprox R$ %.2f\n", salarioLiquido);
 
   return 0;
 }

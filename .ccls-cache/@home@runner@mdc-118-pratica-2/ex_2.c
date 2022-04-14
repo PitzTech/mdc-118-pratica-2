@@ -7,7 +7,7 @@ int num1, num2, soma, quociente, resto;
 int main(void) {
   printf("Digite 2 números separados por espaços: ");
   
-    scanf("%d %d", &num1, &num2);
+  scanf("%d %d", &num1, &num2);
 
   quociente = num1 / num2;
   resto = num1 % num2;
