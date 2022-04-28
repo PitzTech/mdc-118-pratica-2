@@ -5,7 +5,7 @@
 #define IR 0.25
 #define INSS 0.11
 
-float valorHoraReais, salarioBruto, salarioLiquido;
+float valorHoraReais, salarioBruto, salarioLiquido, impostosDescontados;
 int totalHoras;
 
 int main(void) {
@@ -16,9 +16,12 @@ int main(void) {
 
   salarioBruto = valorHoraReais * totalHoras;
   salarioLiquido = salarioBruto * (1 - IR) * (1 - INSS);
+  impostosDescontados = salarioBruto - salarioLiquido;
 
   printf("O salário bruto é de aprox R$ %.2f\n", salarioBruto);
   printf("O salário liquido é de aprox R$ %.2f\n", salarioLiquido);
+  printf("Os impostos descontados são aprox R$ %.2f\n", impostosDescontados);
+
 
   return 0;
 }
