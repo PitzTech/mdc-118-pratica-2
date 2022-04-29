@@ -5,7 +5,7 @@
 float celciusTemperature, fahrenheitTemperature;
 
 int main(void) {
-  printf("Digite a temperara em Celcius: ");
+  printf("Digite a temperatura em Celcius: ");
   scanf("%f", &celciusTemperature);
 
   fahrenheitTemperature = celciusTemperature * 9/5 + 32;
